@@ -5,7 +5,7 @@ metadata:
   labels:
     app: Healthcare-app
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: Healthcare-app
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: Healthcareapp-container
-        image: madhavan2454/project-Healthcareapp-img:latest
+        image: madhavan2454/project-healthcareapp-img:latest
         ports:
         - containerPort: 8082
 ---
